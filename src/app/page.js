@@ -1,10 +1,10 @@
-import { Card, Hero } from "@/components";
-import { aboutCardsInfo, aboutIcons } from "@/Content/about";
+import { Card, Hero, ClassCard } from "@/components";
+import { aboutCardsInfo, aboutIcons, whyUsInfo } from "@/Content/info";
 import Title from "@/UI/Title";
 import Button from "@/UI/Button";
 import Image from "next/image";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsFillPlayFill } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
               <Card key={index} item={item} />
             ))}
           </div>
-          <div className=" flex ">
+          <div className=" flex py-14">
             <div className=" flex flex-col text-center lg:text-start items-center lg:items-start flex-1">
               <Title className=" text-start">Who We Are</Title>
               <h2 className="text-4xl font-bold leading-tight mb-6  md:w-full">
@@ -90,11 +90,86 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className=" px-7 py-28 lg:px-24 text-center">
+        <section className=" px-7 py-16 lg:py-20 lg:px-24 text-center">
           <Title className=" text-start">our feature class</Title>
-          <h2 className="text-4xl font-bold leading-tight mb-6  md:w-full">
+          <h2 className="text-4xl font-bold leading-tight mb-10  md:w-full">
             We Are Offering Best Flexible Classes
           </h2>
+          <ClassCard />
+        </section>
+        <div className=" bg-primary lg:bg-transparent lg:bg-[url('/images/cta-bg.png')] relative z-0 bg-cover  bg-no-repeat w-full lg:h-52 px-4">
+          <div className=" container mx-auto lg:mx-0 px-2 lg:px-20 w-full h-full flex lg:flex-row flex-col gap-10 lg:gap-6  py-3 text-left items-center justify-center lg:justify-start ">
+            <h2 className=" text-white font-bold text-3xl lg:text-4xl leading-[1.2] text-center lg:text-left lg:w-[65%]">
+              We Are Always Providing Best Fitness Service For You
+            </h2>
+            <Link className=" btn-hero " href="/classes">
+              join with us
+              <BsArrowRight className="ml-2 text-primary text-2xl" />
+            </Link>
+          </div>
+        </div>
+        <section className=" bg-[url('/images/choose-bg.jpg')] relative z-0 bg-cover bg-center px-7 py-16 lg:py-20 lg:px-24">
+          <div className="  flex flex-col lg:flex-row justify-center  items-center gap-4">
+            <div className=" max-w-[100%] lg:w-full  relative">
+              <BsFillPlayFill className=" text-primary absolute left-[50%] translate-x-[-50%] translate-y-[-50%] top-[50%] text-6xl p-2 cursor-pointer bg-white rounded-full"/>
+              <div className=" w-1/2 h-2 bg-primary absolute bottom-[30%] left-[-30%] lg:left-[-16%] rotate-[90deg] "/>
+              <div className=" w-3/4 lg:w-3/4 h-2 bg-primary absolute bottom-[50%] right-[-40%] lg:bottom-[50%] lg:right-[-24%] rotate-[84deg] "/>
+              <Image
+                src="/images/main-img.png"
+                alt="choose-bg"
+                width={350}
+                height={350}
+                className=" w-full lg:w-3/4 mx-auto " 
+              />
+            </div>
+            <div className=" py-10 w-full flex flex-col justify-center text-center lg:text-left px-4">
+              <Title>why choose us</Title>
+              <h2 className=" text-3xl text-white font-bold leading-[1.2]">
+                We Can Give A Shape Of Your Body Here!
+              </h2>
+              <p className="text-md text-secondary mt-7 max-w-3xl">
+                At <b>FlexFit</b>, we are dedicated to helping you achieve the
+                body of your dreams. Our expert trainers and nutritionists will
+                work with you to create a personalized fitness and nutrition
+                plan that helps you reach your specific goals.
+              </p>
+              <div className=" flex flex-col md:grid md:grid-cols-2 gap-6 py-10">
+                {whyUsInfo.map((item, index) => (
+                  <div
+                    key={index}
+                    className=" flex justify-center lg:justify-start items-center  gap-4 "
+                  >
+                    <Image
+                      src={item.icon}
+                      alt={item.icon}
+                      width={60}
+                      height={60}
+                      className=" bg-[#2b2b2b] p-2 hover:bg-primary rounded-full"
+                    />
+                    <p className=" text-xl text-white font-medium w-1/2">
+                      {item.title}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <Link
+                href="/classes"
+                className=" relative mx-auto lg:mx-0 uppercase  flex items-center justify-center text-white font-bold bg-[#3f3f3f] w-[11rem] h-[3rem] before:absolute before:inset-0 before:translate-x-3 before:-translate-y-3 before:border before:border-border-button before:z-[-1] before:transition before:ease-linear hover:before:translate-x-0 hover:before:translate-y-0 mt-14 "
+              >
+                Our Classes
+                <BsArrowRight className="ml-2 text-white text-2xl" />
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className=" bg-[url('/images/teamsBg.png')] relative z-0 bg-cover bg-center px-7 py-16 lg:py-20 lg:px-24 after:bg-[url('/icons/dumble.png')] after:w-full after:object-contain after:absolute after:top-0 after:right-0 after:z-10 ">
+              <div className=" flex flex-col justify-center items-center gap-4 py-10">
+                <Title>
+                  Gym Trainers
+                </Title>
+                <h2 className="text-5xl font-bold mb-3">Team Of Expert Coaches</h2>
+                <p className=" text-secondary font-medium text-md ">Expert team of coaches helps you succeed in any goal,<br/> personalized guidance and motivation provided!</p>
+              </div>
         </section>
       </main>
     </>
