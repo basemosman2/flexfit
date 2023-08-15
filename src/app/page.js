@@ -1,7 +1,18 @@
-import { Card, Hero, ClassCard } from "@/components";
-import { aboutCardsInfo, aboutIcons, whyUsInfo } from "@/Content/info";
+import {
+  Card,
+  Hero,
+  ClassCard,
+  TrainerCards,
+  TestimonialCard,
+  Gallery
+} from "@/components";
+import {
+  aboutCardsInfo,
+  aboutIcons,
+  whyUsInfo,
+  testimonialsIcons,
+} from "@/Content/info";
 import Title from "@/UI/Title";
-import Button from "@/UI/Button";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsFillPlayFill } from "react-icons/bs";
@@ -111,15 +122,15 @@ export default function Home() {
         <section className=" bg-[url('/images/choose-bg.jpg')] relative z-0 bg-cover bg-center px-7 py-16 lg:py-20 lg:px-24">
           <div className="  flex flex-col lg:flex-row justify-center  items-center gap-4">
             <div className=" max-w-[100%] lg:w-full  relative">
-              <BsFillPlayFill className=" text-primary absolute left-[50%] translate-x-[-50%] translate-y-[-50%] top-[50%] text-6xl p-2 cursor-pointer bg-white rounded-full"/>
-              <div className=" w-1/2 h-2 bg-primary absolute bottom-[30%] left-[-30%] lg:left-[-16%] rotate-[90deg] "/>
-              <div className=" w-3/4 lg:w-3/4 h-2 bg-primary absolute bottom-[50%] right-[-40%] lg:bottom-[50%] lg:right-[-24%] rotate-[84deg] "/>
+              <BsFillPlayFill className=" text-primary absolute left-[50%] translate-x-[-50%] translate-y-[-50%] top-[50%] text-6xl p-2 cursor-pointer bg-white rounded-full" />
+              <div className=" w-1/2 h-2 bg-primary absolute bottom-[30%] left-[-30%] lg:left-[-16%] rotate-[90deg] " />
+              <div className=" w-3/4 lg:w-3/4 h-2 bg-primary absolute bottom-[50%] right-[-40%] lg:bottom-[50%] lg:right-[-24%] rotate-[84deg] " />
               <Image
                 src="/images/main-img.png"
                 alt="choose-bg"
                 width={350}
                 height={350}
-                className=" w-full lg:w-3/4 mx-auto " 
+                className=" w-full lg:w-3/4 mx-auto "
               />
             </div>
             <div className=" py-10 w-full flex flex-col justify-center text-center lg:text-left px-4">
@@ -162,14 +173,53 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className=" bg-[url('/images/teamsBg.png')] relative z-0 bg-cover bg-center px-7 py-16 lg:py-20 lg:px-24 after:bg-[url('/icons/dumble.png')] after:w-full after:object-contain after:absolute after:top-0 after:right-0 after:z-10 ">
-              <div className=" flex flex-col justify-center items-center gap-4 py-10">
-                <Title>
-                  Gym Trainers
-                </Title>
-                <h2 className="text-5xl font-bold mb-3">Team Of Expert Coaches</h2>
-                <p className=" text-secondary font-medium text-md ">Expert team of coaches helps you succeed in any goal,<br/> personalized guidance and motivation provided!</p>
-              </div>
+        <section className=" bg-[url('/images/teamsBg.png')] relative z-0 bg-cover bg-center px-7 py-16 lg:py-20 lg:px-24 after:bg-[url('/icons/dumble.png')] after:h-[360px] after:bg-no-repeat after:w-[300px] after:object-cover after:absolute after:top-0 after:right-0 after:-z-10 ">
+          <div className=" flex flex-col justify-center items-center text-center gap-4 py-10">
+            <Title>Gym Trainers</Title>
+            <h2 className="text-5xl font-bold mb-3 mx-auto">
+              Team Of Expert Coaches
+            </h2>
+            <p className=" text-secondary font-medium text-md ">
+              Expert team of coaches helps you succeed in any goal,
+              <br /> personalized guidance and motivation provided!
+            </p>
+            <TrainerCards />
+          </div>
+        </section>
+        <section className="  px-7 py-16 lg:py-20 lg:px-24">
+          <div className=" relative flex flex-col justify-center items-center text-center py-10">
+            <Title>testimonials</Title>
+            <h2 className=" text-2xl lg:text-5xl font-bold mb-8 mx-auto">
+              What Our Clients Say
+            </h2>
+            <TestimonialCard />
+          </div>
+          <div className=" mt-8 flex flex-row flex-wrap justify-center items-center gap-3">
+            {testimonialsIcons.map((icon, index) => (
+              <Image
+                key={index}
+                src={icon}
+                alt="icons"
+                width={200}
+                height={200}
+              />
+            ))}
+          </div>
+        </section>
+        <hr  className="mx-7 lg:mx-24"/>
+        <section className=" px-7 py-16 lg:py-20 lg:px-24 before:bg-[url('/icons/galleryIcon.png')] before:w-[350px] before:h-full before:right-0 before:bg-no-repeat before:absolute  ">
+          <div className=" relative flex flex-col justify-center items-center text-center py-10">
+            <Title>FlexFit Gallery</Title>
+            <h2 className=" text-2xl lg:text-5xl font-bold mb-8 mx-auto">
+              our workplace gallery
+            </h2>
+            <p className="text-secondary font-medium text-md md:w-3/5">
+              Our Workplace Gallery features modern office, team collaboration,
+              and fun culture. Attracts talents and showcases company's work
+              atmosphere.
+            </p>
+            <Gallery/>
+          </div>
         </section>
       </main>
     </>

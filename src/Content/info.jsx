@@ -100,5 +100,13 @@ export const whyUsInfo = [
         icon: "/icons/bottle.png",
         title: "Fresh bottle of water",
     },
-
 ];
+
+export const testimonialsIcons = [
+  "/icons/tmIcon1.png",
+  "/icons/tmIcon2.png",
+  "/icons/tmIcon3.png",
+  "/icons/tmIcon4.png",
+  "/icons/tmIcon5.png",
+]
+
