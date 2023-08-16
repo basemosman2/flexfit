@@ -41,6 +41,12 @@
   -o-border-radius: 5px;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 .btn-hero{
   @apply  relative uppercase  flex items-center justify-center text-black font-bold bg-white w-[11rem] h-[3rem] before:absolute before:inset-0 before:translate-x-3 before:-translate-y-3 before:border before:border-border-button before:z-[-1] before:transition before:ease-linear hover:before:translate-x-0 hover:before:translate-y-0;
 }

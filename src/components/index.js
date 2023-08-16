@@ -1,4 +1,3 @@
-import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Card from "./Card";
@@ -8,10 +7,7 @@ import TestimonialCard from "./TestimonialCard";
 import  Gallery from "./Gallery";
 
 
-
-
 export {
-    Hero,
     Navbar,
     Sidebar,
     Card,
