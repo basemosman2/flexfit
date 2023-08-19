@@ -40,9 +40,9 @@ const Navbar = () => {
         <Image
           src="/images/logo.svg"
           alt="logo"
-          width={140}
-          height={140}
-          className="object-contain"
+          width="0"
+          height="0"
+          className="w-full object-contain"
         />
       </Link>
       <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen}  />

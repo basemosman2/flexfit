@@ -15,7 +15,7 @@ const TestimonialSection = () => {
       </div>
       <div className=" mt-8 flex flex-row flex-wrap justify-center items-center gap-3">
         {testimonialsIcons.map((icon, index) => (
-          <Image key={index} src={icon} alt="icons" width={200} height={200} />
+          <Image key={index} src={icon} alt="icons" width="0" height="0" sizes="100vw" className=" w-[200px]" />
         ))}
       </div>
     </section>

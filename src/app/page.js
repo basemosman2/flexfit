@@ -1,3 +1,4 @@
+import { Footer } from "@/components";
 import {
   HeroSection,
   AboutSection,
@@ -7,7 +8,10 @@ import {
   TrainersSection,
   TestimonialSection,
   GallerySection,
-  BmiSection
+  BmiSection,
+  PricingSection,
+  BlogsSection,
+  ContactBanner,
 } from "@/components/sections";
 
 export default function Home() {
@@ -24,6 +28,10 @@ export default function Home() {
         <hr className="mx-7 lg:mx-24" />
         <GallerySection />
         <BmiSection />
+        <PricingSection/>
+        <BlogsSection/>
+        <ContactBanner/>
+        <Footer/>
       </main>
     </>
   );

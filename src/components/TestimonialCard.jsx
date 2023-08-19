@@ -53,9 +53,10 @@ const TestimonialCard = () => {
               <Image
                 src="/icons/testimonial-icon.png"
                 alt="testimonial"
-                width={60}
-                height={160}
-                className=" mb-4"
+                width="0"
+                height="0"
+                sizes="100vw"
+                className=" w-[60px] h-[60px] object-contain mb-4"
               />
                 <p className=" lg:w-4/5 lg:text-xl font-thin">{testimonial.text}</p>
                 <p className=" font-bold text-2xl mt-4">{testimonial.name}</p>

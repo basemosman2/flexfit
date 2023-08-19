@@ -7,6 +7,9 @@ import TestimonialSection from './TestimonialSection';
 import TrainersSection from './TrainersSection';
 import WhyChooseUsSection from './WhyChooseUsSection';
 import BmiSection from "./BmiSection";
+import PricingSection from './PricingSection';
+import BlogsSection from './BlogsSection';
+import ContactBanner from './ContactBanner';
 
 
 export {
@@ -19,4 +22,7 @@ export {
     TrainersSection,
     WhyChooseUsSection,
     BmiSection,
+    PricingSection,
+    BlogsSection,
+    ContactBanner,
 }

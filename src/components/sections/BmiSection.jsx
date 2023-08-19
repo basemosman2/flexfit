@@ -29,9 +29,9 @@ const BmiSection = () => {
   };
 
   return (
-    <section className=" bg-[url('/images/BmiSectionBg.jpg')] relative w-full z-0 bg-cover bg-right px-7 py-16 lg:py-20 lg:px-24">
+    <section className=" bg-[url('/images/BmiSectionBg.jpg')] relative w-full z-0 bg-cover bg-right px-7 py-16 lg:py-20 lg:px-24 before:bg-black before:opacity-60 before:absolute before:w-full before:inset-0 before:-z-10 ">
       <div className="text-white">
-        <h2 className="text-3xl font-bold leading-6 mb-4">
+        <h2 className="text-3xl font-bold leading-8 mb-4">
           Let's Calculate Your <span className="text-primary">BMI</span>
         </h2>
         <p className="text-lg md:text-secondary text-white">
@@ -39,13 +39,13 @@ const BmiSection = () => {
           tool.
         </p>
       </div>
-      <div className=" w-2/4">
-        <form className=" flex w-full gap-4 h-12 mt-10">
+      <div className=" md:w-2/4">
+        <form className=" flex flex-wrap lg:flex-nowrap w-full gap-4 lg:h-12 mt-10">
           <input
             type="number"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
-            className="w-1/2 md:bg-transparent text-md border-2 md:text-white  border-[#ffffff7d] pl-6 bg-white text-black"
+            className=" w-full lg:w-1/2 h-10 md:bg-transparent text-md border-2 md:text-white  border-[#ffffff7d] pl-6 bg-white text-black"
             placeholder="Weight / Kg"
             max="999"
             min="1"
@@ -54,17 +54,17 @@ const BmiSection = () => {
             type="number"
             value={height}
             onChange={(e) => setHeight(e.target.value)}
-            className="w-1/2 md:bg-transparent md:text-white text-md border-2 border-[#ffffff7d] pl-6 bg-white text-black"
+            className="w-full lg:w-1/2 h-10 md:bg-transparent md:text-white text-md border-2 border-[#ffffff7d] pl-6 bg-white text-black"
             placeholder="Height / cm"
             max="999"
             min="1"
           />
         </form>
-        <p className="mt-4 gap-3 text-md font-medium flex items-center w-full text-white ">
-          <span className="w-1/2">
+        <p className="mt-4 gap-3 text-md font-medium flex flex-col lg:flex-row  lg:items-center w-full text-white ">
+          <span className="lg:w-1/2">
             Your BMI is: <span className="text-primary">{bmiResult}</span>
           </span>
-          <span className="w-1/2">
+          <span className="lg:w-1/2">
             Your weight is: <span className="text-primary">{health}</span>
           </span>
         </p>

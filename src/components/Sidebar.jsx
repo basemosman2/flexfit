@@ -46,9 +46,10 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           <Image
             src="/images/logoBlack.svg"
             alt="logo"
-            width={140}
-            height={140}
-            className="object-contain"
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-full object-contain"
           />
         </Link>
         <AiOutlineClose
@@ -73,9 +74,10 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
               key={index}
               src={img}
               alt="sideImg"
-              width={100}
-              height={100}
-              className="rounded-xl cursor-pointer"
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="w-full h-auto rounded-xl cursor-pointer"
             />
           ))}
         </div>
