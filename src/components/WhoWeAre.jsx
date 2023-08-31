@@ -51,9 +51,10 @@ const WhoWeAre = () => {
         <Image
           src="/images/girl.png"
           alt="girl"
-          width={500}
-          height={500}
-          className=" absolute -translate-y-[50%] top-[50%] right-0  z-50"
+          width="0"
+          height="0"
+          sizes="100vw"
+          className=" absolute w-full -translate-y-[50%] top-[50%] right-0  z-50"
         />
         <Image
           src="/images/redbg.svg"
