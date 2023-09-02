@@ -29,13 +29,13 @@ const Footer = () => {
             <AiOutlineMail className=" bg-secondary opacity-50 text-4xl hover:bg-primary hover:opacity-100 cursor-pointer rounded-full text-white p-2" />
           </div>
           <p className="text-md font-medium text-secondary">
-            Privacy Policy | © 2023 FlexFit <br /> Design by{" "}
+            Privacy Policy | © 2023 FlexFit <br /> Developed by{" "}
             <Link
               target="_blank"
               rel="noreferrer"
-              href="https://www.radiustheme.com/"
+              href="/"
             >
-              RadiusTheme
+              Basem osman
             </Link>
           </p>
         </div>

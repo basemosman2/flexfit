@@ -342,3 +342,79 @@ export const blogsData = [
   },
 ];
 
+export const classCard = [
+  {
+    img: "/images/cyclingBg.jpg",
+    title: "Cycling",
+    time: "Wed: 9:00am",
+    trainer: "Smith John",
+  },
+  {
+    img: "/images/meditationBg.jpg",
+    title: "meditation",
+    time: "Fri: 1:00pm",
+    trainer: "Mary jane",
+  },
+  {
+    img: "/images/mma.jpg",
+    title: "Boxing",
+    time: "Tue: 4:00pm",
+    trainer: "John Doe",
+  },
+  {
+    img: "/images/karateBg.jpg",
+    title: "Karate",
+    time: "Sat: 9:00am",
+    trainer: "David Smith",
+  },
+  {
+    img: "/images/powerBg.jpg",
+    title: "PowerLifting",
+    time: "Mon: 8:00pm",
+    trainer: "Larry Doe",
+  },
+  {
+    img: "/images/workout.jpg",
+    title: "Workout",
+    time: "Sun: 10:00pm",
+    trainer: "Shawn Ray",
+  },
+  {
+    img: "/images/cross.jpg",
+    title: "Crossfit",
+    time: "Tue: 9:00pm",
+    trainer: "jenifer Alex",
+  },
+  {
+    img: "/images/running.jpg",
+    title: "Running",
+    time: "Thu: 12:00am",
+    trainer: "Christian Smith",
+  },
+  {
+    img: "/images/bodybuilding.jpg",
+    title: "Bodybuilding",
+    time: "Mon: 8:00pm",
+    trainer: "John Paul",
+  },
+  {
+    img: "/images/box.jpg",
+    title: "Mma",
+    time: "Fri: 6:00pm",
+    trainer: "Becky Smith",
+  },
+  {
+    img: "/images/yoga.jpg",
+    title: "yoga",
+    time: "Tue: 4:00pm",
+    trainer: "John Doe",
+  },
+  {
+    img: "/images/fitness.jpg",
+    title: "fitness",
+    time: "Sun: 5:00pm",
+    trainer: "Mia jake",
+  },
+
+];
+

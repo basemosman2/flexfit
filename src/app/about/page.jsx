@@ -3,7 +3,6 @@ import { TrainersSection } from "@/components/sections";
 import React from "react";
 
 const About = () => {
-  console.log('dsd')
   return (
     <>
       <HeaderBanner title="About Us" />
