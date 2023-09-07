@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiLogoFacebook, BiLogoTwitter, BiLogoInstagram } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
-import { RiArrowUpSLine } from "react-icons/ri";
+
 
 const Footer = () => {
   return (
@@ -11,11 +11,13 @@ const Footer = () => {
         <div className=" flex flex-[1.4] flex-col gap-4">
           <Link href="/">
             <Image
-              src="/images/logoBlack.svg"
+              src="/images/flexFit-logos_black.png"
               alt="logo"
               width="0"
               height="0"
-              className="w-1/2 object-contain"
+              sizes="100vw"
+              priority={false}
+              className="w-[200px] h-[50px] object-cover"
             />
           </Link>
           <p className="text-md font-medium text-secondary w-3/5">

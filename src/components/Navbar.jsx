@@ -33,16 +33,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-10 py-4 ${
+    <div className={`fixed top-0 left-0 w-full flex items-center justify-between px-2 md:px-10 py-4 ${
       isScrolled ? 'bg-black' : 'bg-transparent'
     } transition-colors duration-300 z-50`}>
       <Link href="/">
         <Image
-          src="/images/logo.svg"
+          src="/images/flexFit-logos_white.png"
           alt="logo"
           width="0"
           height="0"
-          className="w-full object-contain"
+          sizes="100vw"
+          priority={false}
+          className="w-[200px] h-[60px] object-cover"
         />
       </Link>
       <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen}  />
