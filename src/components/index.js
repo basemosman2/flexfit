@@ -9,7 +9,6 @@ import Footer from "./Footer";
 import HeaderBanner from "./HeaderBanner";
 import WhoWeAre from "./WhoWeAre";
 import ClassesList from "./ClassesList";
-import BlogCard from "./blogCard";
 
 
 export {
@@ -24,5 +23,4 @@ export {
     HeaderBanner,
     WhoWeAre,
     ClassesList,
-    BlogCard
 };
