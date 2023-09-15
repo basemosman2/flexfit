@@ -32,7 +32,7 @@ const BmiSection = () => {
     <section className=" bg-[url('/images/BmiSectionBg.jpg')] relative w-full z-0 bg-cover bg-right px-7 py-16 lg:py-20 lg:px-24 before:bg-black before:opacity-60 before:absolute before:w-full before:inset-0 before:-z-10 ">
       <div className="text-white">
         <h2 className="text-3xl font-bold leading-8 mb-4">
-          Let's Calculate Your <span className="text-primary">BMI</span>
+          Lets Calculate Your <span className="text-primary">BMI</span>
         </h2>
         <p className="text-lg md:text-secondary text-white">
           Easily determine your body mass index with our accurate calculation

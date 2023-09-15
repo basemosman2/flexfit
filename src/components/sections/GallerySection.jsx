@@ -11,7 +11,7 @@ const GallerySection = () => {
         </h2>
         <p className="text-secondary font-medium text-md md:w-3/5">
           Our Workplace Gallery features modern office, team collaboration, and
-          fun culture. Attracts talents and showcases company's work atmosphere.
+          fun culture. Attracts talents and showcases company work atmosphere.
         </p>
         <Gallery />
       </div>
