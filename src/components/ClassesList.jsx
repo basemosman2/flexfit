@@ -20,7 +20,7 @@ const ClassesList = ({ classes }) => {
             <span className=" text-secondary text-sm">Trainer</span>
             <span>{item.trainer}</span>
           </p>
-          <Link href="/contact" className="ml-24 text-white text-md font-medium bg-[#555] py-3 px-7 rounded-full hover:bg-primary ease-in duration-200  ">
+          <Link href="/contact" className="lg:ml-24 text-white text-md font-medium bg-[#555] py-3 px-7 rounded-full hover:bg-primary ease-in duration-200  ">
             Join Now
           </Link>
         </div>
