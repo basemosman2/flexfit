@@ -55,7 +55,7 @@ const Navbar = () => {
           onClick={() => setMobileMenuBar(!mobileMenuBar)}
         />
         <Link
-          href="/Login"
+          href=""
           className=" cursor-pointer text-white text-3xl hover:text-primary"
         >
           <BsPerson />
